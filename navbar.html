@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            height: 10vh;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap !important;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            box-shadow: 2px 2px 15px gray;
+        }
+        .left{
+            /* border: 1px solid green; */
+            width: 20%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center{
+            height: 10vh;
+            width: 60%;
+            /* border: 1px solid blue; */
+        }
+        .center ul{
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid violet; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .center ul li{
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: sans-serif;
+            transition: all ease .5s;
+            /* background-color: white;
+            color: black; */
+        }
+        .right{
+            height: 10vh;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav ul li:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        @media screen and (max-width:425px){
+            nav{
+                background-color: white;
+                color: black;
+                flex-direction: column;
+                height: 100%;
+            }
+            .left , .center, .right{
+                width: 100%;
+                
+            }
+            .center ul{
+                gap: 10px;
+                justify-content: center;
+                padding: 10px;
+                flex-direction: column;   
+            }
+
+            .center ul li{
+                width: 90%;
+                text-align: center;
+                border: 2px solid black;
+            }
+
+            .center ul li:hover{
+                background-color: black;
+                color: white;
+            }
+            .center{
+                height: 100%;
+            }
+            .right{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        @media screen and (max-width : 768px){
+            .center ul {
+                gap: 10px;
+                justify-content: center;
+            }
+            .center{
+                width: 60%;
+            }
+            .left{
+                width: 10%;
+            }
+            .right{
+                width: 30%;
+                justify-content: center;
+            }
+        }
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="left">
+            <h1>LOGO</h1>
+        </div>
+        <div class="center">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="right">
+            <span><i class="fa-brands fa-facebook fa-2x"></i></span>
+            <span><i class="fa-brands fa-instagram fa-2x"></i></span>
+            <span><i class="fa-brands fa-x-twitter fa-2x"></i></span>
+            <span><i class="fa-brands fa-youtube fa-2x"></i></span>
+            <span><i class="fa-brands fa-youtube fa-2x"></i></span>
+        </div>
+    </nav>
+
+
+
+    <script src="https://kit.fontawesome.com/5b93c455d1.js" crossorigin="anonymous"></script>
+</body>
+</html>
